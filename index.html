@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Conheça Command Center</title>
+    <link rel="stylesheet" href="styles.css?v=uti-comparison-3" />
+  </head>
+  <body data-view="home">
+    <div class="bg-orbit"></div>
+
+    <main class="app-shell single-presentation-app">
+      <section class="view view-home active" id="view-home">
+        <div class="opening-hero single-opening">
+          <div class="opening-photo" aria-label="Imagem inspirada em sala de Command Center"></div>
+
+          <div class="opening-content">
+            <div class="hero-brandline">
+              <span class="hero-logo logo-lockup">
+                <img src="assets/brand/logo-command-center-mark.png" alt="Command Center" />
+              </span>
+              <div class="brand-pillars" aria-label="Pilares do Command Center">
+                <span>
+                  <svg class="pillar-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 19V5" />
+                    <path d="M4 19h16" />
+                    <path d="M8 16v-5" />
+                    <path d="M12 16V8" />
+                    <path d="M16 16v-3" />
+                  </svg>
+                  <span data-i18n="pillarOperational">Inteligência Operacional</span>
+                </span>
+                <span>
+                  <svg class="pillar-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M13 2 5 13h6l-1 9 9-12h-6l0-8Z" />
+                  </svg>
+                  <span data-i18n="pillarInnovation">Inovação</span>
+                </span>
+                <span>
+                  <svg class="pillar-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="7" />
+                    <path d="M12 5v3" />
+                    <path d="M12 16v3" />
+                    <path d="M5 12h3" />
+                    <path d="M16 12h3" />
+                    <circle cx="12" cy="12" r="2" />
+                  </svg>
+                  <span data-i18n="pillarMonitoring">Monitoramento</span>
+                </span>
+              </div>
+            </div>
+
+            <span class="eyebrow" data-i18n="homeEyebrow">Conheça Command Center</span>
+            <h1 data-i18n="homeTitle">Inteligência operacional em tempo real para transformar cuidado em excelência.</h1>
+            <p data-i18n="homeDescription">
+              Uma apresentação única sobre como o Command Center conecta dados, tecnologia e
+              monitoramento para acompanhar a jornada do paciente, antecipar gargalos e sustentar
+              decisões com evidência.
+            </p>
+
+            <div class="hero-actions single-actions">
+              <button class="primary-action" type="button" data-start-presentation data-i18n="startButton">Iniciar apresentação</button>
+              <div class="preset-picker" aria-label="Preset da apresentação">
+                <span data-i18n="presetLabel">Preset</span>
+                <div class="preset-switch" role="group">
+                  <button class="preset-option active" type="button" data-preset="pt" data-i18n="presetPt">Apresentação padrão</button>
+                  <button class="preset-option" type="button" data-preset="en" data-i18n="presetEn">English presentation</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="view-presentation" aria-label="Apresentação padrão">
+        <div class="presentation-shell">
+          <button class="presentation-arrow presentation-prev" id="prev-action" aria-label="Anterior">‹</button>
+          <button class="presentation-arrow presentation-next" id="next-action" aria-label="Próximo">›</button>
+          <article class="content-stage" id="content-stage"></article>
+          <div class="presentation-meta">
+            <button class="secondary-action small" id="show-opening" type="button" data-i18n="openingButton">Abertura</button>
+            <button class="secondary-action small" type="button" data-start-presentation data-i18n="restartButton">Reiniciar</button>
+            <span id="slide-count">Apresentação padrão</span>
+          </div>
+          <div class="presentation-progress" id="presentation-progress"></div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="app.js?v=uti-comparison-3"></script>
+  </body>
+</html>
